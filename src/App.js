@@ -1,12 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import "./App.css";
-import HeaderComponent from './components/Header/header.component';
+import Header from './components/Header/header.component';
 
 const App = () => {
   return (
-    <div className='App'>
-      <HeaderComponent />
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header />
+      </div>
+      <Route path='/' component={null}/>
+      <Route path='/about' component={ null} />
+      <Route path='/profile' component={null } />
+    </BrowserRouter>
     )
 }
 

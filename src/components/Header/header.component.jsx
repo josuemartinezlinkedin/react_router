@@ -1,11 +1,11 @@
 import React from 'react'
 
-const HeaderComponent = () => {
+const Header = () => {
   return (
-    <div className='header'>
+    <div className='Header'>
         <h1>Welcome to all you need to know for routing</h1>
     </div>
   )
 }
 
-export default HeaderComponent
+export default Header;
