@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Routes} from 'react-router-dom';
 import "./App.css";
 import Header from './components/Header/header.component';
+import { Home, Profile, About } from './pages';
 
 const App = () => {
   return (
@@ -9,9 +10,11 @@ const App = () => {
       <div className='App'>
         <Header />
       </div>
-      <Route path='/' component={null}/>
-      <Route path='/about' component={ null} />
-      <Route path='/profile' component={null } />
+      <Routes>
+      <Route path='/' element={<Home />} exact/>
+      <Route path='/about' element={<About />} />
+      <Route path='/profile' element={<Profile /> } />
+      </Routes>
     </BrowserRouter>
     )
 }

@@ -1,0 +1,19 @@
+.nav {
+    list-style-type: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+   
+
+}
+.nav.area {
+    background-color: grey;
+    border:1px grey;
+    border-radius: 3rem;
+    color: aquamarine;
+    text-decoration-line: none;
+}
+.nav.area.special {
+    background-color:darkslategray;
+    color:blanchedalmond;
+}
