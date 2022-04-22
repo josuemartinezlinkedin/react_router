@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import "./App.css";
 import Header from './components/Header/header.component';
-import { Home, Profile, About } from './pages';
+import { Home, Profile, About, NotFound } from './pages';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/base'>
       <div className='App'>
         <Header />
       </div>
@@ -14,6 +14,7 @@ const App = () => {
       <Route path='/' element={<Home />} exact/>
       <Route path='/about' element={<About />} />
       <Route path='/profile' element={<Profile /> } />
+      <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
     )

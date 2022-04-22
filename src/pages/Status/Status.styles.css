@@ -1,0 +1,12 @@
+.fourofour {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color:antiquewhite;
+    color: blueviolet;
+}
+.ohoh {
+    text-decoration: dotted;
+    text-decoration-line: underline;
+    color: brown;
+}
