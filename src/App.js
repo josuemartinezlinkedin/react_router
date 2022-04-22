@@ -6,7 +6,7 @@ import { Home, Profile, About, NotFound } from './pages';
 
 const App = () => {
   return (
-    <BrowserRouter basename='/base'>
+    <BrowserRouter>
       <div className='App'>
         <Header />
       </div>
