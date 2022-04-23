@@ -3,9 +3,9 @@
     width: 500px;
     display: flex;
     justify-content: space-evenly;
-   
-
+    float: right;
 }
+
 .nav.area {
     background-color: grey;
     border:1px grey;
@@ -13,6 +13,7 @@
     color: aquamarine;
     text-decoration-line: none;
 }
+
 .nav.area.special {
     background-color:darkslategray;
     color:antiquewhite;
