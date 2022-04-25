@@ -2,8 +2,6 @@ import React from 'react'
 import { ProfileImages } from '../../components'
 import { useState } from 'react';
 import { Route, Routes, Link, Outlet } from 'react-router-dom';
-import ProfileDetails from './ProfileDetails' 
-import ProfileEdit from './ProfileEdit'
 
 
 
@@ -19,10 +17,6 @@ const Profile = () => {
       </button>
       </div>
       <div>
-    <Routes>
-        <Route path='/details' element={<ProfileDetails />} />
-        <Route path='/edit' element={<ProfileEdit />} />
-      </Routes>
       <ul>
         <li>
           <Link to='/profile/details'>View Profile Details</Link>
