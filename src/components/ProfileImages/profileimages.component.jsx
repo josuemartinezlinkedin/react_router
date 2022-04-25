@@ -1,18 +1,20 @@
 import { useEffect } from "react" 
 import {useNavigate} from "react-router-dom"
+import "./profileimages.styles.css";
 
-const ProfileImages = ({login}) => {
+const ProfileImages = ({open}) => {
     const check = useNavigate();
 
     useEffect(() => {
-        if (!login) {
-        check.push("/")
+        if (!open) {
+        // check.push("/")
         }
-    }, [login, check]
+    }, [open, check]
     );
 
   return (
     <div>
+        <h3 className="close">Tap to close</h3>
         <h2>These are images</h2>
         <h2>These are images</h2>
         <h2>These are images</h2>
